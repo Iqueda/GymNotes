@@ -8,32 +8,40 @@ class TrainingForm extends Component {
         return (
             <div className='container-fluid'>
               <form className='form-horizontal'>
-                <div className='col-sm-4' style={{background:'yellow'}}>
+                <div className='col-sm-4' >
+                <div style={{background:'yellow', padding: 5}}>
                   <h1>Workout A</h1>
                     <label>Chest</label>
                       <FourForm />
                     <label>Triceps</label>
                       <ThreeForm />
-                        <button type='button' className='btn btn-default' style={{marginTop:10}}>Submit Workout</button>
+                        <button type='button' className='btn btn-default' style={{marginTop:10, marginBottom: 10}}>Submit Workout</button>
+                  </div>
                 </div>
-                <div className='col-sm-4' style={{background:'green'}}>
+                <div className='col-sm-4'>
+                  <div style={{background:'green', padding: 5}}>
                   <h1>Workout B</h1>
                     <label>Back</label>
                       <FourForm />
                     <label>Biceps</label>
                       <ThreeForm />
-                       <button type='button' className='btn btn-default' style={{marginTop:10}}>Submit Workout</button>
+                       <button type='button' className='btn btn-default' style={{marginTop:10, marginBottom: 10}}>Submit Workout</button>
+                  </div>
                 </div>
-                <div className='col-sm-4' style={{background:'gray'}}>
+                <div className='col-sm-4'>
+                  <div style={{background:'lightblue', padding: 5}}>
                   <h1>Workout C</h1>
                     <label>Leg</label>
                       <FourForm />
                         <label>Shoulder</label>
                       <ThreeForm />
-                       <button type='button' className='btn btn-default' style={{marginTop:10}}>Submit Workout</button>
+                       <button type='button' className='btn btn-default' style={{marginTop:10, marginBottom: 10}}>Submit Workout</button>
+                 </div>
                 </div>
+                    <div className='col-sm-12'>
+                   <Link to='/' type='button' className='btn btn-lg btn-primary' style={{marginTop:20, marginBottom:20,}}>Return</Link>  
+                    </div>
               </form>
-                <Link to='/' type='button' className='btn btn-lg btn-primary' style={{marginTop:20}}>Return</Link>  
             </div>    
         );
     }
